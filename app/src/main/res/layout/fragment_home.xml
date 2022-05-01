@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingBottom="45dp"
+    android:paddingTop="45dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/iv_hf_showPic">
+
+        <ImageView
+            android:layout_width="324dp"
+            android:layout_height="415dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/showic1" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_hf_desTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_hf_showPic"
+        android:layout_marginTop="24dp"
+        android:text="说明与提示："
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignLeft="@id/iv_hf_showPic"/>
+
+    <TextView
+        android:id="@+id/tv_hf_desCon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_hf_desTitle"
+        android:layout_alignLeft="@id/tv_hf_desTitle"
+        android:layout_marginTop="8dp"
+        android:text="@string/des_click_btn" />
+
+    <Button
+        android:id="@+id/btn_hf_stReStep"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv_hf_desCon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background="#FF8D74"
+        android:text="点击开启服务"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btn_hf_stServer"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/btn_hf_stReStep"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="#FF8D74"
+        android:text="允许弹窗"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btn_hf_stPopWin"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/btn_hf_stServer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="#FF8D74"
+        android:text="录制步骤"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>

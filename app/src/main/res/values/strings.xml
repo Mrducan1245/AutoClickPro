@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AutoClickPro</string>
+    <string name="title_home">首页</string>
+    <string name="title_dashboard">任务列表</string>
+    <string name="title_notifications">设置</string>
+    <string name="des_click_btn">用户您好，点击以下按钮开始录制步骤.您可以选择保存步骤为脚本，从而方便后续使用。具体说名可以参照以下步骤,</string>
+</resources>
